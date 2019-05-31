@@ -16,7 +16,7 @@ for l in lines:
     if l=="PILOT\n":
         voice = voices[1]
     elif l=="FRED\n":
-        voice = voices[0]
+        voice = voices[2]
     else:
         script.append("(voice_{})".format(voice))
         script.append('(SayText "{}")'.format(l[:-1]))
